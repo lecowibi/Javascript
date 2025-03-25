@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- Check Property</title>
+    <style>
+        .result{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- radio button  -->
+    <h1>Payment Method</h1>
+    <input type="radio" name="card" id="masterCard">
+    <label>Master Card</label>
+    <br>
+    <input type="radio" name="card" id="dollarCard">
+    <label>Dollar Card</label>
+    <br>
+    <input type="radio" name="card" id="visaCard">
+    <label>Visa Card</label>
+    <br>
+    <label id="cardResult" class="result"></label>
+    <br>
+    <br>
+    <!-- checkbox  -->
+
+    <input type="checkbox" name="checkbox" id="checkBox">
+    <label for="checkbox">Agree Terms and Condition</label>
+    <br>
+    <label id="checkResult" class="result"></label>
+    <br>
+    <br>
+    <button id="submit">Submit</button>
+    <!-- JavaScript  -->
+     <script>
+let masterCard=document.getElementById("masterCard");
+let dollarCard=document.getElementById("dollarCard");
+let visaCard=document.getElementById("visaCard");
+let checkBox=document.getElementById("checkBox");
+let submit=document.getElementById("submit");
+let checkResult=document.getElementById("checkResult");
+let cardResult=document.getElementById("cardResult");
+
+submit.onclick= function(){
+    if(masterCard.checked){
+        cardResult.textContent = "You are paying with Master card"
+    }
+    else if(visaCard.checked){
+        cardResult.textContent = "You are paying with Visa Card"
+    }
+    else if(dollarCard.checked){
+        cardResult.textContent = "You are paying with Dollar Card"
+    }
+    else{
+         cardResult.textContent = "You must select your payment method"
+    }
+    if(checkBox.checked){
+        checkResult.textContent = "You agreed with Terms and Condition";
+    }
+    else{
+        checkResult.textContent = "Please select Terms and Condition";
+    }
+}
+
+     </script>
+
+   
+</body>
+</html>

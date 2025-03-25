@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Go to console to see output</p>
+
+    <script>
+        let fullname="Bishal Tamang";
+
+        // let firstName = fullname.slice(0,6);
+        // let lastName = fullname.slice(7,);
+        // console.log(firstName);
+        // console.log(lastName);
+// appropriate way of slicing name
+        let firstName = fullname.slice(0,fullname.indexOf(" "));
+        let lastName = fullname.slice(fullname.indexOf(" "),);
+        console.log(firstName);
+        console.log(lastName);
+
+        // email slicing 
+        let email= "bishal@gmail.com";
+        let username = email.slice(0,email.indexOf("@"));
+        let extension = email.slice(email.indexOf("@"),);
+        console.log(username);
+        console.log(extension);
+    </script>
+</body>
+</html>

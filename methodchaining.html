@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Go to console to see output</p>
+
+    <script>
+        // taking input from user 
+        let username = window.prompt("Enter the username");
+
+        // without method chaining 
+    //     username = username.trim();
+    //    let firstChar = username.charAt(0);
+    //     firstChar= firstChar.toUpperCase();
+
+    //    let extrachar = username.slice(1);
+    //    extraChar = extrachar.toLowerCase();
+       
+    //    username = firstChar + extraChar;
+    //    console.log(username);
+
+    
+    // with method chaining
+    username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+    console.log(username);
+    </script>
+</body>
+</html>
