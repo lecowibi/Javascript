@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+</head>
+<!-- used chatgpt for css  -->
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 150px;
+}
+
+input[type="button"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+</style>
+<body>
+    <h1>
+        Temperature Conversion
+    </h1>
+    <input type="number" name="textBox" id="textBox">
+    <br><br>
+    <input type="radio" name="temperature" id="toFahrenheit">
+    <label for="Fahrenheit">Celcius to Fahrenheit</label>
+    <br>
+    <input type="radio" name="temperature" id="toCelcius">
+    <label for="Celcius">Fahrenheit to Celcius</label>
+    <br>
+    <input type="button" value="Submit" onclick="convert()">
+    <p id="result"></p>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

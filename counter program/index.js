@@ -8,7 +8,8 @@ decrease.onclick = function () {
   label.textContent = count;
 };
 reset.onclick = function () {
-  label.textContent = 0;
+  count=0;
+  label.textContent = count;
 };
 increase.onclick=function(){
     count++;
