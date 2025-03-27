@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Go to Console
+
+
+
+    <script>
+            function openFridge(...foods){
+                console.log(...foods);
+            }
+            function getFood(...foods){
+                return foods;
+            }
+            let food1="Pizza";
+            let food2="Hamburger";
+            let food3="French Fry";
+            let food4="Hotdog";
+
+            // openFridge(food1,food2,food3,food4);
+            const food= getFood(food1,food2,food3,food4);
+            console.log(food);
+         
+            
+            // sum 
+// function sum(...number){
+//     let result=0;
+//     for(let numbers of number){
+// result+=numbers;
+//     }
+//     return result;
+// }
+// const total=sum(10,4);
+// console.log(`Your total is Nrs. ${total}`)
+
+//average
+function average(...number){
+    let result=0;
+    for(let numbers of number){
+        result+=numbers;
+    }
+    return result/number.length;
+}
+const totalaverage= average(10,5,10,5,10);
+console.log(`total average is ${totalaverage}`);
+    </script>
+</body>
+</html>
