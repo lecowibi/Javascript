@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller Program</title>
+    <!-- css from chatgpt  -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 50px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    width: 50px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#diceResult {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#diceImage {
+    margin-top: 20px;
+}
+
+#diceImage img {
+    width: 60px;  /* Adjust size as needed */
+    height: 60px;
+    margin: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dice Roller Program</h1>
+        <label># of Dice</label>
+        <input type="number" value="1" min="1" id="numOfDice">
+        <button onclick="rollDice()">Roll Dice</button>
+        <div id="diceResult"></div>
+        <div id="diceImage"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
